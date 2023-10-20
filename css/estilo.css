@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter';
+}
+
+:root {
+    --primaria: #2644D5;
+    --secundaria: #FAFF00;
+    --button: #EBEE4D;
+    --text: #000;
+    --background-body: #074CB0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+    padding: 0 32px;
+
+    border-bottom: var(--secundaria) 4px solid;
+    background-color: var(--primaria);
+}
+
+header img {
+    width: 80px;
+}
+
+nav {
+    display: none;
+}
+
+.header-right {
+    display: none;
+}
+
+#hamburguer {
+    border: none;
+    font-size: 4rem;
+    font-weight: 500;
+
+    background-color: transparent;
+    color: #FFF;
+}
+
+#banner {
+    width: 100%;
+    height: 228px;
+
+    background-image: url('/assets/Banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#text-body {
+    width: 100%;
+    padding: 2%;
+}
+
+#text-body h2 {
+    font-size: 1.4rem;
+    margin: 2% 0;
+    color: var(--text);
+}
+
+#text-body p {
+    font-size: 0.9rem;
+    margin: 4% 0;
+    color: var(--text);
+}
+
+.center_button {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+
+    color: var(--text);
+}
+
+.center_button button {
+    width: 50%;
+    height: 34px;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    color: black;
+    background-color: var(--button);
+}
+
+#study-plans {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 4% 0;
+    background-color: var(--background-body);
+}
+
+#study-plans h2 {
+    font-family: Londrina Solid;
+    font-size: 2rem;
+    text-align: center;
+
+    color: #FFF;
+}
+
+#plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    padding: 18px 0;
+    margin: 21px 0;
+
+    border-radius: 10%;
+
+    background-color: #FFF;
+}
+
+.plan h3 {
+    font-family: Londrina Solid;
+    font-size: 2.4rem;
+
+    color: #000;
+}
+
+.plan img {
+    width: 50%;
+    margin: 14px 0;
+}
+
+.plan button {
+    width: 50%;
+    height: 34px;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+
+    color: #000;
+    background-color: var(--button);
+}
+
+#model {
+    display: flex;
+    justify-content: center;
+
+    margin: 20px 0;
+}
+
+#model img {
+    width: 90%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    width: 100%;
+    height: 128px;
+
+    background-color: var(--primaria);
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #FFF;
+}
+
+footer #redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#redes img {
+    width: 30px;
+}
+
+@media (min-width: 1080px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    header nav {
+        display: flex;
+        gap: 24px;
+    }
+
+    header nav a {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: #FFF;
+    }
+
+    .header-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .header-right {
+        display: flex;
+        gap: 48px;
+    }
+
+    .search {
+        position: relative;
+    }
+
+    .search input {
+        width: 280px;
+        height: 40px;
+
+        border: none;
+        border-radius: 10px;
+        background-color: #FFF;
+    }
+
+    .search span {
+        position: absolute;
+
+        left: 5px;
+        top: 8px;
+    }
+
+    #user {
+        width: 40px;
+    }
+
+    #hamburguer {
+        display: none;
+    }
+
+    #banner {
+        height: 848px;
+    }
+
+    #text-body {
+        padding: 4%;
+    }
+
+    #text-body h2 {
+        font-size: 3rem;
+    }
+
+    #text-body p {
+        font-size: 1.8rem;
+    }
+
+    .center_button button {
+        height: 84px;
+
+        font-size: 1.6rem;
+    }
+
+    #plans {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .plan {
+        width: 40%;
+        height: 600px;
+
+        margin: 0 184px;
+    }
+
+    .plan img {
+        width: 68%;
+    }
+
+    .plan button {
+        height: 48px;
+    }
+
+    footer h3 {
+        font-size: 1.6rem;
+    }
+
+    #redes img {
+        width: 40px;
+    }
+}
