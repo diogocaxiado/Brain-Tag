@@ -12,6 +12,9 @@ function mudarTema()
 
         l.innerHTML = "dark_mode";
     }
+}
 
-
+function menu() 
+{
+    const menu = document.querySelector('')
 }

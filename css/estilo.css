@@ -10,11 +10,38 @@ body {
 }
 
 :root {
-    --primaria: #2644D5;
+    --plano-fundo: #002356;
+    --primaria: #0067FE;
     --secundaria: #FAFF00;
     --button: #EBEE4D;
-    --text: #000;
+    --text:#ffff;
     --background-body: #074CB0;
+}
+
+.escuro
+{
+    --plano-fundo:#FFFFFF;
+    --primaria: #2644D5;
+    --text: #000;
+}
+
+body {
+    background-color: var(--plano-fundo);
+}
+
+.menu{
+    display: none;
+    /* position: fixed;
+    top: 0;
+    left: 0;    
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: #002356; */
 }
 
 header {
@@ -30,7 +57,7 @@ header {
 }
 
 header img {
-    width: 80px;
+    width: 68px;
 }
 
 nav {
@@ -43,18 +70,28 @@ nav {
 
 #hamburguer {
     border: none;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
-
     background-color: transparent;
     color: #FFF;
+}
+
+#botao-lua{
+    font-size: 44px;
+    position: relative;
+    top: 0;
+    
+    border: 0;
+    color: #FFF;
+    background-color: transparent;
+
 }
 
 #banner {
     width: 100%;
     height: 228px;
 
-    background-image: url('/assets/Banner.png');
+    background-image: url('/assets/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,6 +135,7 @@ nav {
 
     color: black;
     background-color: var(--button);
+    cursor: pointer;
 }
 
 #study-plans {
@@ -210,17 +248,23 @@ footer #redes {
 }
 
 @media (min-width: 1080px) {
+    .menu {
+        background-color: transparent;
+    }
+
     header {
-        display: flex;
-        justify-content: space-between;
+       position: sticky;
+       top: 0;
     }
 
     header img {
         width: 80px;
     }
 
-    header nav {
+    .menu nav {
         display: flex;
+        margin-top: 32px;
+        margin-left: 140px;
         gap: 24px;
     }
 
@@ -249,7 +293,7 @@ footer #redes {
     .search input {
         width: 280px;
         height: 40px;
-
+        padding-left: 34px;
         border: none;
         border-radius: 10px;
         background-color: #FFF;
